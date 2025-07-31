@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NICU 藥物計算</title>
+  <style>
+    body {
+      font-family: 'Microsoft JhengHei', sans-serif;
+      padding: 1rem;
+      max-width: 600px;
+      margin: auto;
+      font-size: 14px;
+    }
+    label, select, input, button {
+      display: block;
+      margin: 1rem 0;
+      width: 100%;
+      font-size: 14px;
+    }
+    #result {
+      font-weight: bold;
+      color: green;
+      background-color: #fff8dc;
+      padding: 0.5rem;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    #note {
+      white-space: pre-wrap;
+      color: #555;
+      font-size: 14px;
+    }
+    .iv-mode {
+      display: none;
+      margin-bottom: 1rem;
+      font-size: 14px;
+    }
+    #instruction {
+      background-color: #fff8dc;
+      font-weight: bold;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      white-space: pre-wrap;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h2>NICU 藥物稀釋計算</h2>
+  <label for="drug">選擇藥品：</label>
+  <select id="drug"></select>
+
+  <div id="instruction"></div>
+
+  <div class="iv-mode" id="ivModeContainer">
+    <label>選擇投與方式：</label>
+    <label><input type="radio" name="ivMode" value="IVP" checked /> IVP</label>
+    <label><input type="radio" name="ivMode" value="IVD" /> IVD</label>
+  </div>
+
+  <label for="dose">輸入醫師開立的劑量（mg）：</label>
+  <input type="number" id="dose" />
+
+  <div id="note"></div>
+  <div id="result"></div>
+
+  <script>
+    let medicationData = {};
+
+    async function loadData() {
+      const res = await fetch('medication_data.json');
+      medicationData = await res.json();
+
+      const drugSelect = document.getElementById('drug');
+      for (const drug in medicationData) {
+        const option = document.createElement('option');
+        option.value = drug;
+        option.textContent = drug;
+        drugSelect.appendChild(option);
+      }
+    }
+
+    function roundToTwo(num) {
+      return Math.round(num * 100) / 100;
+    }
+
+    function calculate() {
+      const drug = document.getElementById('drug').value;
+      const dose = parseFloat(document.getElementById('dose').value);
+      const resultDiv = document.getElementById('result');
+      const noteDiv = document.getElementById('note');
+      const instructionDiv = document.getElementById('instruction');
+      const drugData = medicationData[drug];
+
+      if (!drugData || isNaN(dose)) {
+        resultDiv.textContent = '';
+        instructionDiv.textContent = '';
+        noteDiv.textContent = '';
+        return;
+      }
+
+      let mL = 0;
+      instructionDiv.textContent = drugData.instruction || '';
+      noteDiv.textContent = drugData.note || '';
+
+      if (typeof drugData.formula === 'object' && drugData.specialMode === 'IVP/IVD') {
+        const mode = document.querySelector('input[name="ivMode"]:checked').value;
+        if (mode === 'IVP') {
+          mL = dose / 50;
+        } else {
+          mL = (dose / 50 >= 0.1) ? (dose / 50 * 5) : (dose / 5 * 5);
+        }
+      } else {
+        try {
+          if (drug.includes("Famotidine")) {
+            mL = dose < 0.1 ? (dose / 1 * 5) : (dose / 0.2);
+          } else {
+            mL = eval(drugData.formula);
+          }
+        } catch {
+          resultDiv.textContent = '⚠️ 公式錯誤';
+          return;
+        }
+      }
+
+      resultDiv.textContent = `稀釋後應給 mL：${roundToTwo(mL).toFixed(2)} mL`;
+    }
+
+    document.getElementById('drug').addEventListener('change', () => {
+      const selectedDrug = document.getElementById('drug').value;
+      const ivMode = medicationData[selectedDrug]?.specialMode;
+      document.getElementById('ivModeContainer').style.display = ivMode === 'IVP/IVD' ? 'block' : 'none';
+      calculate();
+    });
+
+    document.getElementById('dose').addEventListener('input', calculate);
+    document.querySelectorAll('input[name="ivMode"]').forEach(r => r.addEventListener('change', calculate));
+
+    loadData();
+  </script>
+</body>
+</html>

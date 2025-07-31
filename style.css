@@ -1,0 +1,17 @@
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 20px;
+}
+.nicu-box {
+  background-color: #fff8dc;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+label, input, select {
+  display: block;
+  margin: 10px 0;
+}

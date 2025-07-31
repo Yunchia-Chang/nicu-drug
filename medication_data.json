@@ -1,0 +1,217 @@
+{
+  "Ampicillin (500mg/Vial)": {
+    "instruction": "1 vail 加入 5mL 注射用水 (1mL=100mg) 配置，取實際dose給藥，建議用1.5mL N/S drip 30 mins",
+    "note": "",
+    "formula": "dose/100"
+  },
+  "Gentamicin (80mg/2mL/Vial)": {
+    "instruction": "取實際dose，稀釋成4倍量  (濃度：1mL=10mg)給藥，建議用1.5mL N/S drip 60 mins",
+    "note": "",
+    "formula": "dose/40*4"
+  },
+  "CeFoTaxiMe (2g/Vial)": {
+    "instruction": "1vial加入10mL 注射用水 (1mL=200mg)，取實際dose，稀釋成5倍量 (1mL=40mg)，建議用1.5mL N/S drip 30 mins.",
+    "note": "",
+    "formula": "dose/200*5"
+  },
+  "Cefazolin (1000mg/vial)": {
+    "instruction": "1 vail 加入 10mL N/S (1mL=100mg) 配置，取實際dose，建議用1.5mL N/S drip 30 mins",
+    "note": "",
+    "formula": "dose/100"
+  },
+  "Ceftazidime (500mg/vial)": {
+    "instruction": "1 vail 加入 5mL N/S 配置 (1mL=100mg)，取實際dose，稀釋成2.5倍量 (1mL=40mg)，不足1mL者加到1mL，建議用1.5 mL N/S drip 30mins",
+    "note": "",
+    "formula": "dose/100*2.5"
+  },
+  "Ceftriaxone   (1g/Vial)": {
+    "instruction": "1 vail 加入 10mL 注射用水 (1mL=100mg) 配置，取實際dose，稀釋成2.5倍量 (1ml=40mg) ,不足1mL者加到1mL，建議用1.5 mL N/S drip 60mins",
+    "note": "",
+    "formula": "dose/100*2.5"
+  },
+  "Cefepime (500mg/Vial)": {
+    "instruction": "1 vail 加入 5mL N/S 配置 (1mL=200mg)，取實際dose，稀釋成2倍量 (1mL=100mg)，建議用1.5 mL N/S drip 30mins.",
+    "note": "",
+    "formula": "dose/200*2"
+  },
+  "Oxacillin (500mg/Vial)": {
+    "instruction": "1 vail 加入 5mL N/S (1mL=100mg)，取實際dose給藥，建議用1.5mL N/S drip 60 mins.",
+    "note": "",
+    "formula": "dose/100"
+  },
+  "Amoxicillin 1.0g + Clavulanate 0.2g (1.2g/vial)": {
+    "instruction": "1vial加入20mL N/S (1mL=60mg A+C)，取實際dose，以N/S稀釋2.5倍 (1ml=24mg A+C),建議用1.5mL N/S drip 30 mins。",
+    "note": "",
+    "formula": "dose/60*2.5"
+  },
+  "Ampicillin/Sulbactam (A+S 1.5g/vial)": {
+    "instruction": "1 vail 加入 3.2 mL N/S (1mL=375mg ampicillin+sulbactam)，取實際dose，稀釋成10倍量 (1mL=37.5mg)，建議用1.5mL N/S drip 30 mins.",
+    "note": "",
+    "formula": "dose/375*10"
+  },
+  "Piperacillin sodium 2 g + Tazobactam sodium 0.25 g/vial)": {
+    "instruction": "1 vial加入10 mL N/S (1mL=202.5mg PIP+TAZO), 取實際dose, 稀釋成2.5倍量 (1mL=81 mg PIP+TAZO)，建議用1.5mL N/S drip 30 mins",
+    "note": "",
+    "formula": "dose/202.5*2.5"
+  },
+  "Ertapenem 1g/Vial": {
+    "instruction": "1 vail 加入 10mL 注射用水配置 (1mL=100mg)，取實際dose，以N/S稀釋成5倍量 (1mL=20mg) 給藥，建議用1.5mL N/S drip 30 mins.",
+    "note": "",
+    "formula": "dose/100*5"
+  },
+  "Meropenem (250mg/Vial)": {
+    "instruction": "1vial加入12.5mL N/S (1mL=20mg)，  取實際dose，建議用1.5mL N/S drip 30 mins(Extend IV infusion:240mins)",
+    "note": "",
+    "formula": "dose/20"
+  },
+  "Teicoplanin (200 mg/Vial)": {
+    "instruction": "1vial加入3mL 注射用水 (1mL=66.66mg)，  取實際dose，建議用1.5mL N/S drip 30 mins",
+    "note": "",
+    "formula": "dose/66.66"
+  },
+  "Metronidazole (500mg/100mL/bot)": {
+    "instruction": "不稀釋, IVD 30-60 mins",
+    "note": "",
+    "formula": "dose/5"
+  },
+  "Colistin ( 2MU/Vial=66.8mg CBA/vial)": {
+    "instruction": "1vial加入2mL N/S (1mL=1MU=33.4mg CBA)，取實際dose，稀釋成2倍量(1mL=16.7mg)，不足1mL者加到1mL，建議用1.5mL N/S drip 30 mins。",
+    "note": "",
+    "formula": "dose/33.4*2"
+  },
+  "Clindamycin(針劑) 300mg/2mL/Amp": {
+    "instruction": "取實際dose，稀釋成10倍量  (濃度:1mL=15mg)給藥，建議用1.5mL N/S drip 10 mins",
+    "note": "",
+    "formula": "dose/150*10"
+  },
+  "Fluconazole  (100 mg/50 mL/Vial)": {
+    "instruction": "取實際dose，建議用1.5mL N/S drip 60 mins",
+    "note": "",
+    "formula": "dose/2"
+  },
+  "Amphotericin B (50mg/Vial)": {
+    "instruction": "1vial加入10mL 注射用水(1mL=5mg)，取實際dose，以D5W稀釋成50倍量 (1ml=0.1mg)，不足1mL者加到1mL，建議用1.5 mL D5W drip 120-360min",
+    "note": "",
+    "formula": "dose/5*50"
+  },
+  "Liposomal Amphotericin B 50 mg/Vial": {
+    "instruction": "1 vial 加入 12 mL 無菌注射用水 (1ml=4mg) 配置，取實際dose，以D5W稀釋成4倍量 (1ml=1mg) ，建議用1.5 mL D5W drip 120 mins",
+    "note": "",
+    "formula": "dose/4*4"
+  },
+  "Micafungin 50mg/Vial": {
+    "instruction": "1vial加入5 mL NS or D5W配製後(勿劇烈振搖)(1mL=10mg)，取實際dose，稀釋成10倍量(1mL=1mg)，建議用1.5 mL N/S drip 60min",
+    "note": "",
+    "formula": "dose/10*10"
+  },
+  "Acyclovir (250 mg/Vial)": {
+    "instruction": "1vial加入10mL N/S(1mL=25mg)，取實際dose，以N/S稀釋成5倍量 (1ml=5mg)，不足1mL者加到1mL，建議用1.5 mL N/S drip 60min",
+    "note": "",
+    "formula": "dose/25*5"
+  },
+  "Ganciclovir (500mg/Vial)": {
+    "instruction": "1vial加入10mL 注射用水 (1mL=50mg) 配置，取實際dose，以N/S稀釋成5倍量 (1ml=10mg)，不足1mL者加到1mL，建議用1.5 mL N/S drip 60min",
+    "note": "",
+    "formula": "dose/50*5"
+  },
+  "Calcium gluconate (1000mg/10mL/Amp)": {
+    "instruction": "抽實際dose (1mL=100mg)，稀釋成2倍量 (1ml=50mg) 給予，建議用1.5 mL N/S drip 30mins。",
+    "note": "",
+    "formula": "dose/100*2"
+  },
+  "Furosemide (20mg/2mL/Amp)": {
+    "instruction": "不需稀釋(=10mg/mL) 取實際dose，建議用1.5mL N/S drip 15 mins",
+    "note": "",
+    "formula": "dose/10"
+  },
+  "Bumetanide (2mg/4mL/Amp)": {
+    "instruction": "取實際dose, 稀釋為2倍量 (1ml=0.25mg), IVP 1-2 mins",
+    "note": "",
+    "formula": "dose/0.5*2"
+  },
+  "Ibuprofen (400mg/4mL/Amp)": {
+    "instruction": "不稀釋取實際dose，建議用1.5mL N/S drip 30 mins",
+    "note": "",
+    "formula": "dose/100"
+  },
+  "Propacetamol 1 g/Vial(粉+水)": {
+    "instruction": "1 vial 加入 5mL 溶解液 (1mL=200mg) 配置，取實際dose，以N/S稀釋成10倍量 (1ml=20mg) ，建議用1.5 mL N/S drip 30 mins",
+    "note": "",
+    "formula": "dose/200*10"
+  },
+  "Aminophylline (250mg/10mL/Amp)": {
+    "instruction": "不需稀釋(=25mg/mL) 取實際dose，建議用1.5mL N/S drip 30 mins",
+    "note": "",
+    "formula": "dose/25"
+  },
+  "Caffeine citrate (20mg/mL/Amp)": {
+    "instruction": "不需稀釋(=20mg/mL) 取實際dose，建議用1.5mL N/S drip 30 mins",
+    "note": "",
+    "formula": "dose/20"
+  },
+  "Dexamethasone  (5mg/mL/Amp)": {
+    "instruction": "不需稀釋(=5mg/mL) 取實際dose，建議用1.5mL N/S drip 30 mins",
+    "note": "",
+    "formula": "dose/5"
+  },
+  "Hydrocortisone (100mg/Vial)": {
+    "instruction": "IVP：1vial加入2mL N/S (1mL=50mg) 配置，取實際dose, IVP>30 sec\nIVD：1vial加入2mL N/S (1mL=50mg) 配置，先抽0.1mL，稀釋成1mL(1mL=5mg)，取實際dose，再稀釋5倍(1mL=1mg)，建議用1.5mL N/S drip 30 mins",
+    "note": "IVP：1vial加入2mL N/S (1mL=50mg) 配置， 取實際dose, IVP>30 sec\nIVD：1vial加入2mL N/S (1mL=50mg) 配置，先抽0.1mL，稀釋成1mL(1mL=5mg)，取實際dose，再稀釋5倍(1mL=1mg)，建議用1.5mL N/S drip 30 mins",
+    "formula": {
+      "IVP": "dose / 50",
+      "IVD_high": "dose / 50 * 5",
+      "IVD_low": "dose / 5 * 5"
+    },
+    "specialMode": "IVP/IVD"
+  },
+  "Diazepam (10 mg/2ml/Amp)": {
+    "instruction": "不稀釋 (5mg/mL)，IVP 0.4ml/min",
+    "note": "",
+    "formula": "dose/5"
+  },
+  "Lorazepam (2mg/mL/Amp)": {
+    "instruction": "取實際dose，稀釋成5倍量  (濃度：1mL=0.4mg)給藥，建議用1.5mL N/S drip 30 mins",
+    "note": "",
+    "formula": "dose/2*5"
+  },
+  "Phenobarbital (100mg/mL/Amp)": {
+    "instruction": "取實際dose，稀釋成10倍量  (濃度：1mL=10mg)給藥，建議用1.5mL N/S drip 30 mins",
+    "note": "",
+    "formula": "dose/100*10"
+  },
+  "Levetiracetam (500mg/5mL/Vial)": {
+    "instruction": "取實際dose，稀釋成10倍量  (濃度：1mL=10mg)給藥，建議用1.5mL N/S drip 30 mins",
+    "note": "",
+    "formula": "dose/100*10"
+  },
+  "Morphine  (10 mg/ml/Amp)": {
+    "instruction": "取實際dose，稀釋成20倍量  (濃度：1mL=0.5mg)給藥，IVD建議用1.5mL N/S drip 15 mins",
+    "note": "",
+    "formula": "dose/10*20"
+  },
+  "Fentanyl (0.05mg/mL) 2mL/Amp": {
+    "instruction": "取實際dose，稀釋成5倍量  (濃度：1mL=0.01mg)給藥，IVD建議用1.5mL N/S drip 30 mins",
+    "note": "",
+    "formula": "dose/0.05*5"
+  },
+  "Ketamine (500mg/10mL/Vial)": {
+    "instruction": "IVP：不稀釋，取實際dose, IVP>1 min",
+    "note": "",
+    "formula": "dose/50"
+  },
+  "Pantoprazole (40mg/vial)": {
+    "instruction": "1vial加入10mL 注射用水 (1mL=4mg)，取實際dose，稀釋成5倍量 (1mL=0.8mg)，建議用1.5mL N/S drip 30 mins.",
+    "note": "",
+    "formula": "dose/4*5"
+  },
+  "Famotidine (20mg/2mL/Amp)": {
+    "instruction": "抽0.1mL (1mL=10mg)，稀釋成1mL (1mL=1mg)，抽實際dose，再稀釋5倍量 (1mL=0.2mg)，建議用1.5 mL N/S drip 30mins",
+    "note": "抽0.1mL (1mL=10mg)，稀釋成1mL (1mL=1mg)，抽實際dose，再稀釋5倍量 (1mL=0.2mg)，建議用1.5 mL N/S drip 30mins",
+    "formula": "dose < 0.1 ? (dose / 1 * 5) : (dose / 0.2)"
+  },
+  "Metoclopramide (10mg/2mL/Amp)": {
+    "instruction": "不需稀釋，取實際dose，IVD建議用1.5mL N/S drip 30 mins",
+    "note": "",
+    "formula": "dose/5"
+  }
+}
