@@ -20,7 +20,7 @@
     "formula": "dose/100"
   },
   "Ceftazidime (500mg/vial)": {
-    "instruction": "1 vail 加入 5mL N/S 配置 (1mL=100mg)，取實際dose，稀釋成2.5倍量 (1mL=40mg)，不足1mL者加到1mL，建議用1.5 mL N/S drip 30mins",
+    "instruction": "1 vail 加入 5mL N/S 配置 (1mL=90mg)，建議用1.5 mL N/S drip 30mins",
     "note": "",
     "formula": "dose/100*2.5"
   },
